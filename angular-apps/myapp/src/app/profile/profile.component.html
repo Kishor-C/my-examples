@@ -1,0 +1,51 @@
+<div>
+    <div>
+        {{10000 | currency: 'INR'}}
+        {{'2000-12-25' | date : 'dd-MMMM-yyyy'}}
+    </div>
+    <div class="container-fluid w-25">
+        <h2>Simple Form</h2>
+        <hr />
+        <form [formGroup]="profileForm" (ngSubmit)="handleSubmit()">
+            <div>
+                <h5>Enter name</h5>
+                <input type = 'text' formControlName="name" class="form-control form-control-lg" placeholder="Enter name"/>
+            </div>
+            <div>
+                <h5>Select Birthday</h5>
+                <input type = 'date' formControlName="dob" class="form-control form-control-lg" />
+            
+            </div>
+            <div>
+                <input type = 'submit' class="w-100 btn btn-primary btn-lg" value="Submit">
+            </div>
+        </form>
+    </div>
+    <div>
+        {{profileForm.value | json}}
+    </div>
+
+    <div>
+        <button class="btn btn-primary btn-lg" (click)="handleClick()">Click</button>
+    </div>
+    <div *ngIf="users">
+       <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Id</th><th>Name</th><th>Username</th><th>Email</th><th>Street</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let u of users">
+                    <td>{{u.id}}</td>
+                    <td>{{u.name}}</td>
+                    <td>{{u.username}}</td>
+                    <td>{{u.email}}</td>
+                    <td>{{u.address.street}}</td>
+                    
+                </tr>
+            </tbody>
+       </table>
+    </div>
+</div>
+

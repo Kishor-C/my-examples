@@ -1,0 +1,60 @@
+<!--
+ Copyright (c) 2014, 2024, Oracle and/or its affiliates.
+ Licensed under The Universal Permissive License (UPL), Version 1.0
+ as shown at https://oss.oracle.com/licenses/upl/
+ -->
+<div class="oj-hybrid-padding">
+  
+  <h1>I18N</h1>
+  
+  <h1>Input Number</h1>
+  <oj-c-input-number id="number-input"  raw-value="{{age}}"
+      label-hint="Enter age" label-edge="inside"></oj-c-input-number>
+
+  <h1>Input Text and Button Demo</h1>
+  
+  <oj-c-input-text id="text-input"  raw-value="{{firstname}}"
+      label-hint="Enter username" label-edge="inside"></oj-c-input-text>
+  <h3>
+    Hey  <oj-bind-text value="[[firstname]]"></oj-bind-text>
+  </h3>
+  <oj-c-button on-oj-action="[[buttonAction]]" 
+      disabled="[[firstname()==null || firstname().trim()==='']]" label="Submit"></oj-c-button>
+  
+
+  <oj-c-input-number id="user-id" value="{{userId}}" label-hint="Enter user id" label-edge="inside"></oj-c-input-number>
+  <oj-c-button on-oj-action="[[invokeFakeData]]" label="Fetch Data"></oj-c-button>
+
+  <br />
+   
+      <oj-table
+              id="table"
+              aria-label="User Table"
+             
+              data="[[dataprovider]]"
+              
+              
+              scroll-policy="loadAll"
+              
+             
+              columns='[{"headerText": "User Id", 
+                         "field": "id",
+                         "id": "id"},
+                         {"headerText": "Name", 
+                         "field": "name",
+                         "id": "name"},
+                         {"headerText": "User Name", 
+                         "field": "username",
+                         "id": "username"},
+                         {"headerText": "Email", 
+                         "field": "email",
+                         "id": "email"},
+                         {"headerText": "Street", 
+                         "field": "address.street",
+                         "id": "street"}
+                         ]'
+              ></oj-table>
+ 
+  
+</div>
+
