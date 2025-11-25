@@ -1,0 +1,60 @@
+.alert-success, .alert-danger {
+  background-color: white;
+  padding: 5px;
+  border: 2px solid black;
+  text-align: center;
+}
+
+.highlight:hover {
+  background-color: rgb(76.5, 166.1, 0);
+}
+
+.alert-danger {
+  color: blue;
+}
+.alert-success {
+  border: 2px green solid;
+  color: green;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  color: white;
+}
+
+.rectangle {
+  width: 200px;
+  height: 100px;
+  background-color: red;
+  color: white;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-5 {
+  width: 41.6666666667%;
+}
+
+div {
+  background-color: yellow;
+  padding: 5px;
+  border: 2px solid;
+}
+
+body {
+  font-family: consolas;
+  color: black;
+}
+
+div h1 {
+  color: red;
+}
+div h2 {
+  color: blue;
+}
+
+/*# sourceMappingURL=output.css.map */

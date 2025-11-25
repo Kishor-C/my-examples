@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Components</h2>
+   <!-- Outer ViewModel's data-binding -->
+    <div data-bind="with: userData">
+    <my-component params="message: message, count: count"></my-component>
+    </div>
+    <button data-bind="click: incrementCount">Increment Count</button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.0/knockout-min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        function OuterViewModel() {
+            this.userData = {
+                message: ko.observable("Hello World"),
+                count: ko.observable(0)
+            };
+            this.incrementCount = () => {
+                this.userData.count(this.userData.count() + 1);
+            }
+        }
+        ko.components.register('my-component', {
+            viewModel: function(params) {
+                this.message = params.message; //ko.observable(params.message);
+                this.count = params.count;// ko.observable(params.count);
+            },
+            template: `
+                <div>
+                    <h3 data-bind="text: message"></h3>
+                    <p>Count: <span data-bind="text: count"></span></p>
+                </div>`
+        });
+        ko.applyBindings(new OuterViewModel());
+
+    </script>
+</body>
+</html>

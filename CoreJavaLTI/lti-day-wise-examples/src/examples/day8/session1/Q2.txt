@@ -1,0 +1,49 @@
+Single File Programming Question
+Handling IllegalArgumentException and ArithmeticException
+
+
+
+You are tasked with developing a Java program to manage operations involving a critical number. The program must handle potential errors using exception handling.
+
+
+Create a class named 'Main' with an integer attribute number.
+
+
+Write a Java program that performs the following tasks:
+
+
+If the input number is 0, the program should throw an ArithmeticException with the message "ArithmeticException caught - / by zero".
+If the input number is greater than 7, the program should throw an IllegalArgumentException with the message "IllegalArgumentException caught - Number should not be greater than 7".
+If neither of the above conditions is true, the program should return the given number.
+
+
+HINT: Use nested try block
+
+Input format :
+The input consists of a single integer.
+
+Output format :
+The output is based on the following conditions:
+
+
+
+If an ArithmeticException is caught, print "ArithmeticException caught - / by zero".
+If an IllegalArgumentException is caught, print "IllegalArgumentException caught - Number should not be greater than 7".
+If no exception is caught, print the number itself.
+
+
+Refer to the sample output for formatting specifications.
+
+Sample test cases :
+Input 1 :
+5
+Output 1 :
+5
+Input 2 :
+8
+Output 2 :
+IllegalArgumentException caught - Number should not be greater than 7
+Input 3 :
+0
+Output 3 :
+ArithmeticException caught - / by zero

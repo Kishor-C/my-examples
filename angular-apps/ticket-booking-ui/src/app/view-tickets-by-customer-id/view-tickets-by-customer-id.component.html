@@ -1,0 +1,28 @@
+<div>
+    <h3>Find tickets booked by the customer</h3> <hr />
+    <form [formGroup] = "customerForm" (ngSubmit) = "handleSubmit()">
+        
+        <input type = "number" placeholder="Enter customer id" formControlName = "id" class="w-25 form-control-lg">
+        <br /> <br />
+        <input type = "submit" value = "Search" class = "btn btn-primary btn-lg">
+    </form>
+   @if(tickets) {
+    <table class="table">
+       <thead>
+            <tr>
+                <td>Ticket Id</td><th>Source</th><th>Destination</th><th>Date</th>
+            </tr>
+       </thead>
+        <tbody>
+            @for(t of tickets; track t.ticketId) {
+                <tr>
+                    <td>{{t.ticketId}}</td>
+                    <td>{{t.source}}</td>
+                    <td>{{t.destination}}</td>
+                    <td>{{t.date}}</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+   }
+</div>

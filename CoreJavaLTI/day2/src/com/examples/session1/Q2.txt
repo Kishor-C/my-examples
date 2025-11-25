@@ -1,0 +1,21 @@
+Single File Programming Question
+Write a program to convert Celsius to Fahrenheit formula, F = 1.8 C + 32.
+
+Input format :
+The input consists of the Celsius.
+
+Output format :
+The output prints the Fahrenheit.
+
+Code constraints :
+Integers only.
+
+Sample test cases :
+Input 1 :
+51
+Output 1 :
+123.8
+Input 2 :
+48
+Output 2 :
+118.4

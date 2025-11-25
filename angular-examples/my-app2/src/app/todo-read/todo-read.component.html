@@ -1,0 +1,31 @@
+<div>
+    <h3 class="text-center">Todo tasks list</h3>
+    <div class="mb-3">
+        <button class="btn btn-lg btn-primary" (click)="refresh()">Refresh</button>
+    </div>
+    <div *ngIf="tasks">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Sno</th>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Date</th>
+                   
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let t of tasks; index as i">
+                    <td>{{i+1}}</td>
+                    <td>{{t.id}}</td>
+                    <td>{{t.task | titlecase}}</td>
+                    <td>{{t.date | date}}</td>
+                    
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="mb-3">
+        <button class="btn btn-lg btn-danger" (click) = "deleteAllTasks()">Delete All Tasks</button>
+    </div>
+</div>

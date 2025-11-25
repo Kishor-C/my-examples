@@ -1,0 +1,73 @@
+Single File Programming Question
+Management is building a Student Grades Tracker for a school. The program needs to record the grades for students in different subjects. Each student can be enrolled in multiple subjects, and their grades should be updated as new scores are provided. The order of input for students and subjects must be preserved.
+
+The program should allow adding new students and their subject grades.
+It should also allow updating the grades for existing students in specific subjects.
+Input format :
+The input consists of multiple lines where each line contains an action (add, update, or remove), followed by a student name, a subject, and a grade (only applicable for add and update actions).
+
+
+
+The input ends when the user provides a blank line.
+
+
+
+Output format :
+For each student, print their subjects and corresponding grades in the format:
+
+Student: [student_name], Subject: [subject], Grade: [grade]
+
+
+
+The output should preserve the order of student entries and the order of their subjects, as stored in the LinkedHashMap.
+
+Code constraints :
+The total number of students ≤ 50.
+Each student can have up to 10 subjects.
+Grades are integers between 0 and 100.
+The length of student names and subjects ≤ 30 characters.
+
+
+Sample test cases :
+Input 1 :
+add ram Math 85
+add ram Science 90
+add damu Math 78
+add damu English 88
+update damu Math 80
+Output 1 :
+Added: ram in Math with grade 85
+Added: ram in Science with grade 90
+Added: damu in Math with grade 78
+Added: damu in English with grade 88
+Updated: damu in Math with grade 80
+Input 2 :
+add Abi Math 85
+add Abi Science 90
+add Gopi Math 78
+update Gopi English 88
+Output 2 :
+Added: Abi in Math with grade 85
+Added: Abi in Science with grade 90
+Added: Gopi in Math with grade 78
+Subject English not found for student Gopi.
+Input 3 :
+add gopi Math 85
+update gopi
+Output 3 :
+Added: gopi in Math with grade 85
+Invalid input. Please enter 'action student_name subject_name [grade]'.
+Input 4 :
+add Abishek Math 85
+add Gopi Math 78
+update Gopi Math 110
+Output 4 :
+Added: Abishek in Math with grade 85
+Added: Gopi in Math with grade 78
+Grade should be between 0 and 100.
+Input 5 :
+add Abishek Math 85
+add Gopi Math seventy
+Output 5 :
+Added: Abishek in Math with grade 85
+Invalid grade. Please enter an integer between 0 and 100.

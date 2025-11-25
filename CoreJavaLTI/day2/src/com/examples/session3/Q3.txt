@@ -1,0 +1,60 @@
+Single File Programming Question
+Sum of unique elements in Array
+
+
+
+Problem statement
+
+Implement the given function,
+
+int SumUniqueElements(int* arr, int length);
+
+The function accepts an Integer array ‘arr of size ‘length’ as input. Implement the function such that it returns the sum of unique (non-duplicate) elements in the array.
+
+
+
+Note
+
+Return 0 if no unique element is found.
+
+Computed values lie within integer range.
+
+
+
+Example
+
+Input
+
+8
+
+2 5 4 7 9 2 4 8
+
+Output
+
+29
+
+
+
+Explanation
+
+Elements 2 and 4 occur twice in the input array and are not included in the sum. Hence, the sum of unique elements in the array is 29.
+
+Input format :
+First input is an integer n represents array size.
+
+Next n input represents array values.
+
+Output format :
+Display sum of unique values in the array
+
+Sample test cases :
+Input 1 :
+6
+10 12 22 10 12 98
+Output 1 :
+120
+Input 2 :
+6
+1 10 10 12 23 24
+Output 2 :
+60

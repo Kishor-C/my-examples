@@ -1,0 +1,88 @@
+Single File Programming Question
+You are working on a small utility for a word processing program. The utility should process a list of words and identify:
+
+Words that start with a specific letter.
+Words that have more than a specified number of characters.
+Words that contain a specific substring.
+Write a program that takes a list of words and performs the following tasks:
+
+Check if each word starts with the specified letter.
+Check if the word length is greater than a given number.
+Check if the word contains a specific substring.
+Input format :
+Input Format:
+The first line contains an integer n, the number of words.
+The next n lines contain one word each.
+The next line contains a character representing the letter to check for.
+The next line contains an integer representing the minimum word length to check for.
+The last line contains a substring to search for in the words
+Output format :
+Output Format:
+For each word, print whether it:
+
+Starts with the given letter.
+Has a length greater than the specified number.
+Contains the given substring.
+
+
+Code constraints :
+The number of words (n) ≤ 20.
+
+Each word's length ≤ 30.
+
+The letter and substring to search for are non-empty.
+
+Sample test cases :
+Input 1 :
+3
+hello
+world
+java
+h
+4
+java
+Output 1 :
+Word: hello
+Starts with 'h': true
+Length greater than 4: true
+Contains 'java': false
+
+Word: world
+Starts with 'h': false
+Length greater than 4: true
+Contains 'java': false
+
+Word: java
+Starts with 'h': false
+Length greater than 4: false
+Contains 'java': true
+
+Input 2 :
+4
+data
+structures
+algorithm
+programming
+a
+5
+program
+Output 2 :
+Word: data
+Starts with 'a': false
+Length greater than 5: false
+Contains 'program': false
+
+Word: structures
+Starts with 'a': false
+Length greater than 5: true
+Contains 'program': false
+
+Word: algorithm
+Starts with 'a': true
+Length greater than 5: true
+Contains 'program': false
+
+Word: programming
+Starts with 'a': false
+Length greater than 5: true
+Contains 'program': true

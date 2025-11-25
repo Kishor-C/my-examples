@@ -15,5 +15,7 @@ const nameSlice = createSlice({
     }
 });
 
+console.log(nameSlice);
+
 export const {addName} = nameSlice.actions; // export the actions
 export default nameSlice.reducer; // export the reducer 

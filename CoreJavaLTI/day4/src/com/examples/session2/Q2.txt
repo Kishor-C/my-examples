@@ -1,0 +1,63 @@
+Single File Programming Question
+Problem Statement
+
+
+
+You are tasked with designing a Travel class featuring overloaded calculateTime methods, enabling users to calculate travel time based on either the distance and speed they plan to travel or the number of stops they intend to make and the average duration of each stop. 
+
+
+
+Calculate the time taken for both approaches and display the results.
+
+
+
+For distance and speed input, time = distance/speed.
+
+For number of stops and average duration, time = stops * (avg duration / 60.0)
+
+Input format :
+The first line of input consists of a double value representing the distance.
+
+The second line consists of a double value representing the speed.
+
+The third line consists of an integer representing the number of stops.
+
+The fourth line consists of a double value representing the average stop duration.
+
+Output format :
+The first line of output displays a double value, representing the travel time by distance and speed, rounded to one decimal place.
+
+The second line displays a double value, representing the travel time by number of stops and average stop duration, rounded to one decimal place.
+
+
+
+﻿Refer to the sample output for formatting specifications.
+
+Code constraints :
+In this scenario, the test cases fall under the following constraints:
+
+1.0 ≤ distance ≤ 1000.0
+
+0.0 ≤ speed ≤ 1000.0
+
+1 ≤ number of stops ≤ 100
+
+1.0 ≤ average stop duration ≤ 3600.0
+
+Sample test cases :
+Input 1 :
+50.0
+10.0
+1
+30.0
+Output 1 :
+5.0
+0.5
+Input 2 :
+100.0
+100.0
+100
+100.0
+Output 2 :
+1.0
+166.7

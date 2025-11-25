@@ -1,0 +1,39 @@
+Single File Programming Question
+Valid Password or Not
+
+
+
+The HR committee of Sunrise Basket Company decided to enforce the following rules when an employee creates/changes his/her password.
+
+
+
+Password should be less than 15 and more than 8 characters in length.
+Password should contain at least one upper case and one lower case alphabet.   
+Password should contain at least one number.
+Password should contain at least one special character.
+Password should not contain a space.
+
+
+The program must accept a given password string "password" as input.
+
+Input format :
+The input consists of String that represents password.
+
+Output format :
+The output should print "<password> is a valid password" or "<password> is a invalid password".
+
+Refer sample output for formatting specifications.
+
+Sample test cases :
+Input 1 :
+Ex@1234ab
+Output 1 :
+Ex@1234ab is a valid password
+Input 2 :
+Ex!!
+Output 2 :
+Ex!! is a invalid password
+Input 3 :
+Abcd @1234
+Output 3 :
+Abcd @1234 is a invalid password

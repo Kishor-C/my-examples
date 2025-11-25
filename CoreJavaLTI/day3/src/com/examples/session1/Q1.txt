@@ -1,0 +1,16 @@
+Single File Programming Question
+Write a Java program to find the maximum value in a given array. Define a method findMax that takes an integer array as an argument and returns the maximum value.
+
+Code constraints :
+The input array should have at least one element.
+
+Sample test cases :
+Input 1 :
+5
+10
+20
+30
+40
+50
+Output 1 :
+The maximum value in the array is: 50

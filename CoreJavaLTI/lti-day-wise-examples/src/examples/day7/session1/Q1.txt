@@ -1,0 +1,30 @@
+Single File Programming Question
+Find and Sort Common Words Using HashMap
+
+
+
+Using Java's 'HashMap' and 'Collections', write a program to find and sort the common words from two lines of input text. Each line contains multiple words separated by spaces. The program should identify the common words between the two lines and display them in lexicographically sorted order.
+
+Input format :
+The first line contains a string of words.
+The second line contains another string of words.
+Output format :
+The output prints the set of common words found in both lines enclosed in square brackets, separated by commas.
+
+
+Refer to the sample output for formatting specifications
+
+Code constraints :
+Each line of text may contain up to 100 words.
+Words in the input lines are case-sensitive.
+Sample test cases :
+Input 1 :
+one two three
+two four
+Output 1 :
+[two]
+Input 2 :
+first second third
+third fourth second
+Output 2 :
+[second, third]

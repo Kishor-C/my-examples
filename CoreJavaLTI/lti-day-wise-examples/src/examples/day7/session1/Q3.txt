@@ -1,0 +1,65 @@
+Single File Programming Question
+Mahesh is developing a phone book application to manage contacts efficiently. He needs to add new contacts and display all existing contacts. Using a HashMap, write a program to assist him with this task.
+
+
+
+Functional Requirements
+
+
+
+1. Add a Contact:
+
+Implement a method addContact(String phoneNumber, String name) that adds a new contact to the phone book.
+This method should store the contact in a HashMap with the phone number as the key and the name as the value.
+
+
+2. Display All Contacts:
+
+Implement a method displayContacts() that displays all the contacts in the phone book.
+The method should iterate over the entries in the HashMap and print the details of each contact in the format Name: {name}, Phone Number: {phoneNumber}.
+
+
+Instructions: The Main class name must be public class Main 
+
+Input format :
+The first line of the input is an integer representing the number of contacts to add.
+
+The subsequent lines contain the contact details, where each contact is represented by two lines:
+
+The first line contains the name of the contact (a string).
+The second line contains the phone number of the contact (a string).
+Output format :
+The output displays all contacts in the format:
+
+All Contacts:
+
+Name: {name}, Phone Number: {phoneNumber}
+
+
+
+Refer to the sample output for formatting specifications.
+
+Sample test cases :
+Input 1 :
+2
+Jack Daniel
+9876543210
+Mary Paul
+9638527410
+Output 1 :
+All Contacts:
+Name: Jack Daniel, Phone Number: 9876543210
+Name: Mary Paul, Phone Number: 9638527410
+Input 2 :
+3
+Tom
+9632587410
+Jerry
+9687543210
+Joe
+9658963256
+Output 2 :
+All Contacts:
+Name: Joe, Phone Number: 9658963256
+Name: Tom, Phone Number: 9632587410
+Name: Jerry, Phone Number: 9687543210

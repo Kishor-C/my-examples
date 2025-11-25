@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- view -->
+    <div>
+        <input type = "text" data-bind="value:username" />
+        <h2 data-bind="text:username"></h2>
+    </div>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.0/knockout-min.js" type="text/javascript"></script>
+     <script type="text/javascript">
+        // model
+        let user = {
+            name : "Atharv", dob : "2024-04-08"
+        }
+        // viewModel
+        function ViewModel() {
+            this.username = ko.observable(user.name);
+            this.dob = ko.observable(user.dob)
+        }
+        ko.applyBindings(new ViewModel());
+     </script>
+</body>
+</html>

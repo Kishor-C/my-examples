@@ -1,0 +1,51 @@
+Single File Programming Question
+Employee High Score Leaderboard Management System
+
+
+
+Develop a Java program to efficiently manage and display a leaderboard of employees based on their scores using ArrayList. 
+
+Create a class named Employee with the following attributes:
+
+name - String
+score - double
+Declare the attributes as private and add appropriate getter/setter methods, along with default and parameterized constructors. The output should present the leaderboard in descending order of scores using comparable.
+
+Input format :
+An integer 'n' (1 <= n <= 100) represents the number of employees.
+
+Each employee is provided with their name, which consists of alphanumeric characters, followed by their score, which may be an integer or a decimal number.
+
+Output format :
+Display the leaderboard in descending order of scores.
+
+Refer to the sample output for reference.
+
+Code constraints :
+Employee names will not exceed 100 characters.
+
+Implement the Comparable interface for natural ordering
+
+Sample test cases :
+Input 1 :
+5
+John 2500
+Jane 1800.5
+Adam 2100
+Sarah 1900
+Mike 2250.75
+Output 1 :
+John 2500.0
+Mike 2250.75
+Adam 2100.0
+Sarah 1900.0
+Jane 1800.5
+Input 2 :
+3
+John 2500
+Jane 1800.5
+Adam 2100
+Output 2 :
+John 2500.0
+Adam 2100.0
+Jane 1800.5

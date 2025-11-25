@@ -1,0 +1,61 @@
+ 
+
+
+Mohan, a librarian, is developing software to automate his library tasks. He needs to handle exceptions when attempting to purchase more books than are available in stock.
+
+
+
+Create a Java class named "Book" with the following attributes:
+
+
+
+id - String
+bookTitle - String
+authorName - String
+price - float
+quantityAvailable - int
+
+
+Define a custom exception class named InvalidQuantityException to be used within the 'Book' class. Implement a method purchase(int quantity) in the 'Book' class that takes the quantity of books to be purchased as a parameter. This method should update the quantityAvailable attribute if the purchase is valid, otherwise throw an InvalidQuantityException with an appropriate error message.
+
+Input format :
+The input consists of the following lines:
+
+
+
+Book ID as a String.
+Book title as a String.
+Author name as a String.
+Price of the book as a float.
+Quantity of the book available in stock as a positive integer.
+Quantity of the book to be purchased as a positive integer.
+Output format :
+The output should display:
+
+
+
+"Quantity Available : <quantity>" if the purchase is successful.
+"InvalidQuantityException: Quantity not available" if the purchase quantity exceeds the available quantity.
+
+
+Refer to the sample output for formatting specifications.
+
+Sample test cases :
+Input 1 :
+YCW2019
+You can win
+Shiv Khera
+245
+25
+20
+Output 1 :
+Quantity Available : 5
+Input 2 :
+YCW2019
+You can win
+Shiv Khera
+245
+25
+30
+Output 2 :
+InvalidQuantityException: Quantity not available

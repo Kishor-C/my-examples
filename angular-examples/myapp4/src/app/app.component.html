@@ -1,0 +1,17 @@
+<div>
+  <h2>This is root component</h2>
+
+  <div *ngIf = "employees">
+    <p>List of employees {{employees.length}}</p>
+  </div>
+  <table border ="1">
+    <tr *ngFor = "let e of employees;let i = index">
+      <td>{{i + 1}}</td>
+      <td>{{e.id}}</td><td>{{e.name}}</td>
+    </tr>
+</table>
+  
+  <button (click) = "next()" [disabled] = "index==employees.length-1">Next</button>
+  <button (click) = "previous()" [disabled] = "index==0">Previous</button>
+  <div *ngIf = "employee">{{employee | json}}</div>
+</div>

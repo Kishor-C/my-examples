@@ -1,0 +1,10 @@
+<div>
+    <h1>Parent component</h1>
+    <h2>Data present in parent component {{users | json}}</h2>
+    <h3>Data emited: {{message}}</h3>
+    
+    <div>
+        <app-child [user]="{id:200,name:'Sid'}" (userEmitter)="message=$event" text="demo"></app-child>
+    </div>
+</div>
+

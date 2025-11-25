@@ -1,0 +1,77 @@
+@use "sass:math" as math;
+
+$colors-list: red, green, blue, yellow;
+
+%common-style {
+  background-color: white;
+  padding: 5px;
+  border: 2px solid black;
+  text-align: center;
+}
+
+
+
+.highlight {
+  &:hover {
+    background-color: mix(yellow, green, 30%);
+  }
+}
+
+.alert {
+  &-danger {
+    @extend %common-style;
+    color: nth($colors-list, 3 )
+  }
+  &-success {
+    @extend %common-style;
+    border: 2px green solid;
+    color: green;
+  }
+}
+
+
+@mixin shape($color, $width, $height: $width) {
+  width: $width;
+  height: $height;
+  background-color: $color;
+}
+.square {
+  @include shape(blue, 100px);
+  color: white;
+}
+.rectangle {
+  @include shape(red, 200px, 100px);
+  color:white;
+}
+
+
+$columns: 12;
+
+.col-6 {
+  width: math.div(6, $columns) * 100%;
+}
+.col-5 {
+  width: math.div(5, $columns) * 100%;
+}
+
+div {
+  background-color: yellow;
+  padding: 5px;
+  border: 2px solid;
+}
+
+$font-style : consolas;
+$color: black;
+
+body { 
+  font-family: $font-style;
+  color: $color;
+}
+div {
+  h1 {
+    color: red;
+  }
+  h2 {
+    color: blue;
+  }
+}

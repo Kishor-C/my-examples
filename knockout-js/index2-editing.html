@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h2>Editing the data</h2>
+        Enter name: <input type="text" data-bind="value:username"/> <br />
+        Enter phone: <input type="number" data-bind="value:phone"/> <br />
+        Select dob: <input type="date" data-bind="value:dob"/> <br />
+    </div>
+    <div>
+        <h2>Hello <span data-bind="text:username"></span></h2>
+        <h2>Phone <span data-bind="text:phone"></span></h2>
+        <h2>Dob <span data-bind="text:dob"></span></h2>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.0/knockout-min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        function AppViewModel() {
+            this.username = ko.observable("Kishor");
+            this.phone = ko.observable(93938888);
+            this.dob = ko.observable(new Date("1998-11-24").toLocaleDateString());
+        }
+        ko.applyBindings(new AppViewModel());
+    </script>
+</body>
+</html>

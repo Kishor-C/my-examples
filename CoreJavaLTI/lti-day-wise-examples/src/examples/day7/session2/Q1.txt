@@ -1,0 +1,66 @@
+Single File Programming Question
+Problem Statement
+
+
+
+Prashanth is given a program that calculates the frequency of each character in a given string. The program utilizes a TreeMap to store the characters and their respective frequencies. After processing the input string, it prints the character frequencies in lexicographical order.
+
+
+
+He needs your help in completing the program.
+
+Input format :
+The input consists of a single string that contains any combination of letters, digits, spaces, and special characters.
+
+Output format :
+For each unique character in the input string, print a line in the format: '[character]': [frequency]
+
+The output should be sorted in ascending order based on the characters.
+
+
+
+Refer to the sample output for formatting specifications.
+
+Code constraints :
+The test cases will fall under the following constraints:
+
+length of string ≤ 250
+
+The program should be case-sensitive, meaning 'a' and 'A' are considered different characters.
+
+Sample test cases :
+Input 1 :
+Python programming!
+Output 1 :
+' ': 1
+'!': 1
+'P': 1
+'a': 1
+'g': 2
+'h': 1
+'i': 1
+'m': 2
+'n': 2
+'o': 2
+'p': 1
+'r': 2
+'t': 1
+'y': 1
+Input 2 :
+122233335558
+Output 2 :
+'1': 1
+'2': 3
+'3': 4
+'5': 3
+'8': 1
+Input 3 :
+Radiator
+Output 3 :
+'R': 1
+'a': 2
+'d': 1
+'i': 1
+'o': 1
+'r': 1
+'t': 1

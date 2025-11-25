@@ -1,0 +1,228 @@
+1. What will be the output for the following program?
+
+public class Main {
+    public static void main(String[] args) {
+        int x = 20;
+        int y = 10;
+        if (x > y && y > 10) {
+            System.out.println("y is " + y);
+        } else {
+            System.out.println("x is " + x);
+        }
+    }
+}
+Output: x is 20
+
+2. What is the output for the following code?
+class Main
+{
+    public static void main(String args[])
+    {
+    int a=15;
+    int b=25;
+    if ((a<b) || (a=5)>15)
+       System.out.println(a);
+    else
+       System.out.println(b);
+    }
+}
+
+Output: 15
+
+3. What will be the output for the following program?
+    public static void main(String[] args) {
+        boolean name = true;
+        switch (name) {
+            case true:
+                System.out.println("Hello ");
+            default:
+                System.out.println("hi");
+        }
+    }
+}
+Output: CTE
+
+4. What will happen when you compile and run the following code?
+class Main {    
+    public static void main(String[] args){
+        int i;
+        for(i = 100; i >= 0; i -= 10 ){
+            System.out.print(i + ", ");
+        }   
+    }   
+}
+Output: 100, 90, 80, 70, 60, 50, 40, 30, 20, 10, 0,
+
+5. What is the result
+class Main{
+    public static void main(String[] args){
+        do {
+            int count = 0;
+            do {
+                 count++;
+             } 
+             while (count < 2);
+             System.out.println(count);
+             break;
+        } while (true);
+    }
+}
+Output: 2
+
+6. What will happen when you compile and run the following code?
+public class Test{	
+	public static void main(String[] args){
+		for(int a = 0, b = 3; a < 3 && b > 0; a++, b--){
+			System.out.print(a + " " + b + ", ");
+		}
+	}
+	
+}
+Output: 0 3, 1 2, 2 1,
+
+7. What will be the output of this program?
+public class Main 
+{
+    public static void main(String[] args) 
+    {
+      int x = 10;
+int y = 20;
+if (x > y) {
+    System.out.println("x is greater than y");
+} else if (x < y) {
+    System.out.println("x is less than y");
+} else {
+    System.out.println("x is equal to y");
+}
+
+    }
+}
+
+Output: x is less than y
+
+8.  What does the following code fragment write to the monitor?
+int sum = 14;
+if ( sum < 20 ) 
+    System.out.print("Under ");
+else 
+    System.out.print("Over ");
+System.out.println("the limit.");
+
+Output: Under the limit
+
+9. What variable type of red allows the following application to compile? 
+package tornado; 
+public class Kansas {   
+    public static void main(String[] args) {      
+        int colorOfRainbow = 10;       
+        _____ red = 5;
+         switch(colorOfRainbow) {         
+            default:            
+                System.out.print("Home");            
+                break;         
+         case red:            
+            System.out.print("Away");      
+        }   
+    }
+} 
+
+Output: final int
+
+10. What is the output of the following code?
+package planning; 
+public class ThePlan {   
+    public static void main(String[] input) {      
+        int plan = 1;      
+        plan = plan++ + --plan;      
+        if(plan==1) {         
+            System.out.print("Plan A");      
+        } 
+        else { 
+            if(plan==2) 
+            System.out.print("Plan B");      
+        } 
+        else 
+            System.out.print("Plan C");   
+    } 
+}
+
+Output: The code doesn't compile
+
+11. What is the output of the following application?
+public class Baby {   
+    public static String play(int toy, int age) {      
+        final String game;      
+        if(toy<2)         
+            game = age > 1 ? 1 : 10; // p1      
+        else         
+            game = age > 3 ? "Ball" : "Swim";     
+        return game;  // p2 
+    }   
+    public static void main(String[] variables) {      
+        System.out.print(play(5,2));  
+    } 
+} 
+Output: The code doesn't compile due to p1
+
+12. What is the output
+class BitShift 
+{
+    public static void main(String [] args) 
+    {
+        int x = 0x80000000;
+        System.out.print(x + " and  ");
+        x = x >>> 31;
+        System.out.println(x);
+    }
+}
+
+Output: -2147483648 and 1
+
+13. How many 1s are outputted when the following application is compiled and run? 
+package city; 
+public class Road {   
+    public static void main(String... in) {      
+       int intersections = 100;
+        int streets = 200;      
+        
+        if (intersections < 150) {         
+            System.out.print("one");      
+        } else if (streets > 1000) {         
+            System.out.print("two");      
+        } 
+        
+        if (streets < 500) {         
+            System.out.print("one");      
+        } else {         
+            System.out.print("two");   
+        }
+        }
+}
+        
+
+Output: oneone
+
+14. What is the output
+class Equals 
+{
+    public static void main(String [] args) 
+    {
+        int x = 100;
+        double y = 100.1;
+        boolean b = (x = y); 
+        System.out.println(b);
+    }
+}
+
+Output: Compilation fails
+
+15. What is the output
+int i = 0;
+while (i < 5) {
+    System.out.print(i + " ");
+    i += 2;
+}
+
+Output: 0 2 4
+
+ 

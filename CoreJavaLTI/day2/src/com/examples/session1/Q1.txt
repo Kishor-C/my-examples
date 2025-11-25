@@ -1,0 +1,30 @@
+Bank Loan Interest Calculator
+
+You are developing a program for a bank to calculate the interest on loans provided to customers. The bank uses Simple Interest to determine how much a customer owes after a certain period of time.
+
+Formula: SI = (P * N * R) / 100 
+
+where P = Principal amount, R = Annual interest rate, N = Number of years
+
+Input format :
+The first line consists of a floating-point number representing the loan amount (Principal).
+
+The second line consists of a floating-point number representing the annual interest rate (in percentage).
+
+The third line consists of a floating-point number representing the loan duration (in years).
+
+Output format :
+The output prints the simple interest.
+
+Code constraints :
+Integers only.
+
+Sample test cases :
+Input 1 :
+155 3 1
+Output 1 :
+4.65
+Input 2 :
+100 2 3
+Output 2 :
+6.0

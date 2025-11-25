@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h2>MVVM architecture that separates each component</h2>
+        <!-- View component -->
+        Enter name: <input type="text" data-bind="value:username"/> <br />
+        Enter phone: <input type="number" data-bind="value:phone"/> <br />
+        Select dob: <input type="date" data-bind="value:dob"/> <br />
+    </div>
+    <div>
+        <h2>Hello <span data-bind="text:username"></span></h2>
+        <h2>Phone <span data-bind="text:phone"></span></h2>
+        <h2>Dob <span data-bind="text:dob"></span></h2>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.0/knockout-min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        //Model is a data-structure
+        let user = {
+            username: "Kishor",
+            phone: 9399393,
+            dob: new Date("1988-11-24")
+        }
+        //ViewModel is a function that notify the changes from ViewToModel & ModelToView
+        function AppViewModel() {
+            this.username = ko.observable(user.username);
+            this.phone = ko.observable(user.phone);
+            this.dob = ko.observable(user.dob.toLocaleDateString());
+        }
+        ko.applyBindings(new AppViewModel());
+    </script>
+</body>
+</html>

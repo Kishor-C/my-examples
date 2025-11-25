@@ -1,0 +1,48 @@
+Single File Programming Question
+VENUE HALL DETAILS
+
+
+
+Create a class named Venue with the following attributes.
+
+name - String
+city - String
+address - String
+pincode - int
+Create another class called Main and write a main method to test the above class.
+
+Retrieve input from the user for the name, city, address and pincode. Then, display the details according to the specified output format.
+
+Input format :
+The first line consists of a name in String.
+
+The next line consists of a city in String.
+
+Output format :
+The output should display the venue details.
+
+Refer to the sample output for reference.
+
+Sample test cases :
+Input 1 :
+demo venue name
+demo city
+demo address
+12344
+Output 1 :
+Venue Details
+Venue Name: demo venue name
+City Name : demo city
+City Address : demo address
+City Pincode : 12344
+Input 2 :
+demo venue name 2
+demo city 2
+demo address 2
+11111
+Output 2 :
+Venue Details
+Venue Name: demo venue name 2
+City Name : demo city 2
+City Address : demo address 2
+City Pincode : 11111

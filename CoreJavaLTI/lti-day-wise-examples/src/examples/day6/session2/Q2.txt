@@ -1,0 +1,44 @@
+Single File Programming Question
+Problem Statement:
+
+
+
+In a fruit basket application, users input various fruits to create a TreeSet of unique fruit names. The program, designed for efficient fruit management, identifies and displays the longest fruit name in the basket. 
+
+
+
+This functionality is particularly useful for inventory tracking and ensuring that longer-named fruits are accommodated in the basket.
+
+Input format :
+The first line contains a single integer n, representing the number of fruits present in the TreeSet.
+
+The next n lines contain a string in each, representing a fruit name.
+
+Output format :
+The output prints "Longest word: " followed by the longest fruit name present in the TreeSet.
+
+
+
+Refer to the sample output for the formatting specifications.
+
+Code constraints :
+The given test cases fall under the following constraints:
+
+1 ≤ n ≤ 10
+
+1 ≤ length of each fruit name ≤ 20
+
+Sample test cases :
+Input 1 :
+2
+apple
+banana
+Output 1 :
+Longest word: banana
+Input 2 :
+3
+orange
+mango
+pineapple
+Output 2 :
+Longest word: pineapple

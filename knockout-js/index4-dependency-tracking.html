@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h2>Knockout.js Dependency Tracking</h2>
+        <h3>Quantity: <span data-bind="text:quantity"></span></h3>
+        <h3>Price: <span data-bind="text:price"></span></h3>
+        <hr />
+        <h3>Portfolio value: <span data-bind="text:totalValue"></span></h3>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.0/knockout-min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        //Model is a data-structure
+        let shares = {
+            quantity: 10,
+            price: 200
+        }
+        //ViewModel is a function that notify the changes from ViewToModel & ModelToView
+        function AppViewModel() {
+            this.quantity = ko.observable(shares.quantity);
+            this.price = ko.observable(shares.price);
+            this.totalValue = ko.computed(()=>this.quantity() * this.price());
+            // update the quantity and price every 1 second
+            let id = setInterval(()=>{
+                this.quantity(this.quantity() + 2);
+                this.price(Math.trunc(this.price() * 1.01));
+            }, 1000)
+            // stop the update after 10 seconds
+            setTimeout(()=>{clearInterval(id)}, 10000);
+        }
+        ko.applyBindings(new AppViewModel());
+    </script>
+</body>
+</html>

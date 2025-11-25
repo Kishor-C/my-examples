@@ -1,0 +1,47 @@
+Single File Programming Question
+Create a Java program that enables users to dynamically input employee details and store them in an ArrayList.
+
+
+
+The program should include a class named "Employee" with private attributes:
+
+employeeName - String
+employeeId - int
+employeeDepartment - String
+
+
+The Employee class should have the following methods:
+
+Write a getter method for the above-mentioned attributes.
+An overridden toString() method that returns the employee's details.
+Input format :
+The first line consists of the size of the ArrayList.
+
+The next consecutive line contains employeeName, employeeId, employeeDepartment.
+
+Output format :
+The output should display the list of employees.
+
+Refer to the sample output for reference.
+
+Sample test cases :
+Input 1 :
+1
+Elon
+101
+CEO
+Output 1 :
+List of All Employees
+Employee [employeeName=Elon, employeeId=101, employeeDepartment=CEO]
+Input 2 :
+2
+Elon
+101
+CEO
+Micheal
+1001
+Manager
+Output 2 :
+List of All Employees
+Employee [employeeName=Elon, employeeId=101, employeeDepartment=CEO]
+Employee [employeeName=Micheal, employeeId=1001, employeeDepartment=Manager]

@@ -1,0 +1,77 @@
+Single File Programming Question
+Employee Management
+
+
+
+You are tasked with developing a Java program to manage employee records. The program should allow users to input the first name, last name, employee ID, and job title of an employee. Once the user inputs these details, the program should display the employee's information, including their full name, employee ID, and job title.
+
+
+
+Requirements:
+
+
+
+Create a class Person with the following attributes:
+
+firstName - String
+lastName - String
+
+
+This class serves as a base class for other classes and will be extended by the 'Employee' class.
+
+
+
+Create a class 'Employee' that extends the 'Person' class:
+
+
+
+Inherits attributes firstName and lastName from Person.
+Has additional attributes:
+employeeId - int
+jobTitle - String
+Implement getters, setters, and constructors for all the above-mentioned attributes in both Person and Employee classes.
+
+
+Create a class named 'Main' which contains the main method where program execution begins:
+
+
+
+It prompts the user to input the details of an employee.
+It creates an Employee object with the provided details.
+It displays the employee's information using the getters implemented in the 'Employee' class.
+Input format :
+The first line consists of a String that represents firstName.
+The second line consists of a String that represents lastName.
+The third line consists of an int that represents the employeeId.
+The fourth line consists of a String that represents the jobTitle.
+Output format :
+The output should display the employee details in the following format:
+Employee details:
+
+Name: <firstName> <lastName>, <jobTitle>
+
+Employee ID: <employeeId>
+
+
+
+Refer to the sample output for formatting specifications.
+
+Sample test cases :
+Input 1 :
+John
+Mathew
+120948
+Developer
+Output 1 :
+Employee details:
+Name: John Mathew, Developer
+Employee ID: 120948
+Input 2 :
+Tony
+Stark
+98364
+Senior Program Manager
+Output 2 :
+Employee details:
+Name: Tony Stark, Senior Program Manager
+Employee ID: 98364

@@ -1,0 +1,81 @@
+Single File Programming Question
+HALL MANAGEMENT
+
+﻿
+
+Write a program that sorts a list of Hall objects based on their cost per day using the sort() method of the Comparable interface. Then display them in a tabular form.
+
+Create a class Hall with the following attributes,
+
+name - String
+contactNumber - String
+costPerDay - double
+ownerName - String
+
+
+Declare the attributes as private and add appropriate getter/setter methods, along with default and parameterized constructors. Override the toString() method to print the details in a tabular format. Implement the Comparable interface in the class.
+
+Create a driver class named Main and utilize the main method to gather inputs, sort the objects, and display them.
+
+Input format :
+The first line contains the number of halls, denoted as 'n'.
+
+The subsequent 'n' lines contain details of each hall.
+
+Output format :
+The output displays the details of the halls.
+
+Refer to the sample output for reference.
+
+Sample test cases :
+Input 1 :
+3
+SDH hall
+12345
+12000.0
+Jane           
+XUV hall
+24680
+15000.0
+Jack           
+SRT hall
+13579
+20000.0
+John   
+Output 1 :
+SDH hall 12345 12000.0 Jane           
+XUV hall 24680 15000.0 Jack           
+SRT hall 13579 20000.0 John   
+Input 2 :
+6
+SDH hall
+12345
+12000.0
+Jane           
+XUV hall
+24680
+15000.0
+Jack           
+SRT hall
+13579
+20000.0
+John   
+DFG hall
+24680
+10000
+Jack
+STR hall
+13579
+25000
+Jane
+JKL hall
+67890
+20000
+Joe
+Output 2 :
+DFG hall 24680 10000.0 Jack
+SDH hall 12345 12000.0 Jane           
+XUV hall 24680 15000.0 Jack           
+SRT hall 13579 20000.0 John   
+JKL hall 67890 20000.0 Joe
+STR hall 13579 25000.0 Jane

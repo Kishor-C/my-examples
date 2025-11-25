@@ -1,0 +1,12 @@
+$text-align : center;
+$background-color: #123456;
+$color : white;
+body {
+    margin : 0%;
+}
+h1 {
+    text-align: $text-align;
+    background-color: $background-color;
+    color: $color;
+    padding: 10px;
+}

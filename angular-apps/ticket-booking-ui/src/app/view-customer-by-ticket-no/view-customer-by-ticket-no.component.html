@@ -1,0 +1,26 @@
+<div>
+    <h3>Find Customer</h3> <hr />
+    <form [formGroup] = "ticketForm" (ngSubmit) = "handleSubmit()">
+        
+        <input type = "number" placeholder="Enter ticket no" formControlName = "id" class="form-control-lg">
+        <br /><br />
+        <input type = "submit" value = "Search" class = "btn btn-primary btn-lg">
+    </form>
+   @if(customer) {
+    <table class="table">
+       <thead>
+            <tr>
+                <td>Customer Id</td><th>Name</th>
+            </tr>
+       </thead>
+        <tbody>
+           
+                <tr>
+                    <td>{{customer.customerId}}</td>
+                    <td>{{customer.name}}</td>
+                </tr>
+            
+        </tbody>
+    </table>
+   }
+</div>

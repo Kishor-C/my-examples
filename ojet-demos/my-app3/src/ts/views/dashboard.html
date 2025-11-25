@@ -1,0 +1,20 @@
+<!--
+ Copyright (c) 2014, 2024, Oracle and/or its affiliates.
+ Licensed under The Universal Permissive License (UPL), Version 1.0
+ as shown at https://oss.oracle.com/licenses/upl/
+ -->
+<div class="oj-hybrid-padding">
+    <h2>OJET components</h2>
+    <div id="sampleDemo" class="demo-padding demo-container">
+      <oj-c-input-text
+              on-input="[[buttonAction]]"
+              id="text-input"
+              value="{{firstname}}"
+              label-hint="Enter name"
+              label-edge="inside"></oj-c-input-text>  
+      <oj-c-input-password on-input="[[buttonAction]]" value="{{password}}" label-hint="Enter password"></oj-c-input-password>
+      
+      
+      <oj-c-button id="button2" on-oj-action="[[navigateToSuccess]]" label="Login"></oj-c-button>
+    </div>
+</div>

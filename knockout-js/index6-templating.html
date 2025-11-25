@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Add User</h2>
+    Name: <input type = "text" data-bind="value:name"> <br />
+    Select Dob: <input type = "date" data-bind="value:dob"> <br />
+    <button data-bind="click:addUser">Add User</button>
+    <h2>User List</h2>
+    <div data-bind="template:{name:'user-template', foreach:users}"></div>
+    <script type = "text/html" id="user-template">
+        <h3>Name: <span data-bind="text:name"></span>, Birthday: <span data-bind="text:dob"></span></h3>
+        <button data-bind="click: $parent.removeUser.bind($parent, $data)">Delete</button>
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.0/knockout-min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        function AppViewModel() {
+            this.users = ko.observableArray([
+                {name : "Kishor", dob : "1988-11-24"},
+                {name : "Atharv", dob : "2024-04-08"},
+                {name : "Siddharth", dob : "2019-03-26"}
+            ]);
+            this.name = ko.observable();
+            this.dob = ko.observable();
+            this.addUser = function() {
+                this.users.push({name: this.name(), dob : this.dob()});
+            }
+            this.removeUser = function(user) {
+                console.log(user);
+                this.users.remove(user);
+            }
+        }
+        ko.applyBindings(new AppViewModel());
+    </script>
+</body>
+</html>

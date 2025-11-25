@@ -1,0 +1,104 @@
+Single File Programming Question
+Manage and Sort Hall Details
+
+
+
+You are tasked with managing and sorting a collection of halls. Each hall has details such as name, contact number, cost per day, and owner name. You need to create a program that reads the details of multiple halls, stores them, and then displays them sorted by their cost per day in ascending order.
+
+
+
+Requirements:
+
+Create a class named 'Hall' with the following private attributes:
+
+
+
+String name
+String contactNumber
+double costPerDay
+String ownerName
+
+
+Include the following methods in the 'Hall' class:
+
+
+
+Getters and setters for all attributes.
+A default constructor.
+A parameterized constructor: public Hall(String name, String contactNumber, double costPerDay, String ownerName)
+Override the 'toString' method to return a string representation of the hall details.
+Implement the Comparable<Hall> interface to sort halls by 'costPerDay'.
+
+
+Create a 'Main' class. In the main method:
+
+
+
+Read the number of halls.
+Read the details for each hall and store them uniquely by their names in a Map<String, Hall> data structure.
+Display all the hall details sorted by 'costPerDay'.
+Input format :
+The first line contains an integer 'n', representing the number of halls.
+The subsequent 'n' sets of lines contain the details of each hall in the following order:
+Hall name
+Contact number
+Cost per day
+Owner name
+Output format :
+The output displays the details of the halls sorted by 'costPerDay'.
+
+
+Refer to the sample output for formatting specifications.
+
+Sample test cases :
+Input 1 :
+3
+SDH hall
+12345
+12000.0
+Jane
+XUV hall
+24680
+15000.0
+Jack
+SRT hall
+13579
+20000.0
+John
+Output 1 :
+SDH hall 12345 12000.0 Jane
+XUV hall 24680 15000.0 Jack
+SRT hall 13579 20000.0 John
+Input 2 :
+6
+SDH hall
+12345
+12000.0
+Jane
+XUV hall
+24680
+15000.0
+Jack
+SRT hall
+13579
+20000.0
+John
+DFG hall
+24680
+10000
+Jack
+STR hall
+13579
+25000
+Jane
+JKL hall
+67890
+20000
+Joe
+Output 2 :
+DFG hall 24680 10000.0 Jack
+SDH hall 12345 12000.0 Jane
+XUV hall 24680 15000.0 Jack
+SRT hall 13579 20000.0 John
+JKL hall 67890 20000.0 Joe
+STR hall 13579 25000.0 Jane

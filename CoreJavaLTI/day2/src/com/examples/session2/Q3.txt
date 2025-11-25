@@ -1,0 +1,14 @@
+Single File Programming Question
+Write a program to find the factorial of a given number.
+
+Input format :
+The input consists of the number
+
+Output format :
+Factorial of the given number
+
+Sample test cases :
+Input 1 :
+4
+Output 1 :
+24

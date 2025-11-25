@@ -1,0 +1,14 @@
+$background-color : black !default;
+$text-color: white !default;
+$padding: 25px !default;
+$text-align: center !default;
+$border-radius : 25px !default;
+div {
+  h2 {
+    background-color: $background-color;
+    color: $text-color;
+    text-align: $text-align;
+    border-radius: $border-radius;
+    padding: $padding;
+  }
+}

@@ -1,0 +1,92 @@
+Single File Programming Question
+Senthil is working on a system that tracks the order of books purchased by customers at a bookstore. He wants to create a program that records the order in which books are added and their corresponding quantities. Additionally, the program should allow the removal of books if they are no longer in stock. The program should store this information in a LinkedHashMap, ensuring the order of insertion is maintained.
+
+The user can either add or remove a book by specifying the action followed by the book name and quantity. If a book is removed, it should be completely deleted from the system if its quantity reaches 0 or below.
+
+He needs your help to complete the program.
+
+Input format :
+The input consists of multiple lines where each line represents an action (add or remove), followed by a book title and its quantity, separated by a space.
+
+
+
+Input ends when the user provides a blank line.
+
+
+
+Output format :
+For each unique book, print a line in the format: Book: [book_title], Quantity: [quantity].
+
+
+
+The output should preserve the order in which the books were added, as tracked by the LinkedHashMap.
+
+Code constraints :
+The total number of books ≤ 50.
+The length of each book title ≤ 50 characters.
+Quantities are non-negative integers ≤ 1000.
+The program should handle invalid inputs such as missing quantities, non-numeric quantities, negative quantities, and invalid actions.
+When a book's quantity becomes 0 or negative, it should be removed from the list
+
+
+Sample test cases :
+Input 1 :
+add HarryPotter 3
+add LOTR 5
+add 1984 2
+remove HarryPotter 2
+Output 1 :
+Final Book List:
+Book: HarryPotter, Quantity: 1
+Book: LOTR, Quantity: 5
+Book: 1984, Quantity: 2
+Input 2 :
+add HarryPotter 3
+add LOTR 5
+add 1984 2
+remove HarryPotter 3
+remove LOTR 5
+Output 2 :
+Final Book List:
+Book: 1984, Quantity: 2
+Input 3 :
+add HarryPotter 3
+add LOTR 5
+add 1984 
+Output 3 :
+Invalid input. Please enter action, book title, and quantity.
+Final Book List:
+Book: HarryPotter, Quantity: 3
+Book: LOTR, Quantity: 5
+Input 4 :
+add HarryPotter 3
+add LOTR 5
+remove LOTR -3
+add 1984 2
+Output 4 :
+Quantity should be between 0 and 1000.
+Final Book List:
+Book: HarryPotter, Quantity: 3
+Book: LOTR, Quantity: 5
+Book: 1984, Quantity: 2
+Input 5 :
+add HarryPotter 3
+remove LOTR five
+add 1984 2
+Output 5 :
+Invalid quantity. Please enter a non-negative integer.
+Final Book List:
+Book: HarryPotter, Quantity: 3
+Book: 1984, Quantity: 2
+Input 6 :
+add HarryPotter 3
+remove 5
+add 1984 2
+Output 6 :
+Invalid input. Please enter action, book title, and quantity.
+Final Book List:
+Book: HarryPotter, Quantity: 3
+Book: 1984, Quantity: 2
+Note :
+The program will be evaluated only after the “Submit Code” is clicked.
+Extra spaces and new line characters in the program output will result in the failure of the test case.

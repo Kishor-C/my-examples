@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Components</h2>
+   <my-component params="message: 'Hello World', count:20"></my-component>
+   <my-component></my-component>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.0/knockout-min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        ko.components.register('my-component', {
+            viewModel: function(params) {
+                this.message = ko.observable(params.message || "Hello from component!");
+                this.count = ko.observable(params.count || 0)
+            },
+            template: `<div>
+                    <h3 data-bind="text: message"></h3>
+                    <h4 data-bind="text: count"></h4>
+                </div>`
+        });
+
+        ko.applyBindings();
+    </script>
+</body>
+</html>

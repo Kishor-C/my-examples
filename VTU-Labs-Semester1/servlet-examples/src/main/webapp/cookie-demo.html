@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>Cookie that adds name and employee id</h1>
+	<h2>This page re-appears again after clicking on the Add Cookie button</h2>
+	Note: <i>Notice the url to show AddCookieServlet, after clicking on Add Cookie button</i>
+	<form action = "AddCookieServlet" method = "post">
+		<input type = "submit" value = "Add Cookie">
+	</form>
+	
+	<h2>Click on the below button only after Add Cookie</h2>
+	
+	<form action = "ReadCookieServlet" method = "post">
+		<input type = "submit" value = "Read Cookie">
+	</form>
+
+</body>
+</html>

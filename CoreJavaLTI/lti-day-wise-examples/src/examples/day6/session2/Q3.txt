@@ -1,0 +1,37 @@
+Single File Programming Question
+Problem Statement
+
+
+
+In a bustling classroom, students are specifying their extracurricular activity preferences. To streamline this process, write a program that employs a TreeSet. 
+
+
+
+Implement a program that takes the number of students and their unique preferences as input, sorts the preferences, and then simulates allocating the most preferred activity by removing the first preference from the sorted list. Output the updated TreeSet.
+
+Input format :
+The first line consists of a single integer N, representing the number of students
+
+The second line consists of N space-separated integers, representing individual preferences.
+
+Output format :
+The output prints the updated TreeSet after sorting preferences and simulating allocation by removing the first preference.
+
+
+
+Refer to the sample output for the formatting specifications.
+
+Code constraints :
+1 ≤ N ≤ 10
+
+Sample test cases :
+Input 1 :
+5
+74 56 32 19 97
+Output 1 :
+[32, 56, 74, 97]
+Input 2 :
+10
+96 15 88 28 63 55 41 87 8 100
+Output 2 :
+[15, 28, 41, 55, 63, 87, 88, 96, 100]

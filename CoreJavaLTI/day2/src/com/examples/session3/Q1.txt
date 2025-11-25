@@ -1,0 +1,67 @@
+Single File Programming Question
+Sum of leaders in an array
+
+
+
+Problem Statement
+
+A function accepts a positive integer array ‘arr’ of size ‘n’ as its argument. 
+Implement the function to find the leaders in the array and return their sum. 
+An element is a leader in the array if it is greater than all the elements to its right side. 
+The rightmost element is always a leader.
+
+
+
+Note
+
+If ‘arr’ is empty or none(in case of python), return -1
+
+Output lies within the integer range.
+
+
+
+Example
+
+Input
+
+7
+
+52 66 64 36 45 24 32
+
+Output
+
+207
+
+
+
+Explanation
+
+Leaders of the array are {66,64,45,32} sum = 66+64+45+32=207. Thus the output is 207.
+
+Input format :
+The first integer input represents the size of the array.
+
+The next line of integers represents the array elements.
+
+Output format :
+Output is an integer representing the sum of leader elements in the given array.
+
+Code constraints :
+‘arr’ contains distinct elements.
+
+
+
+Sample test cases :
+Input 1 :
+4
+33 7 21 14
+Output 1 :
+68
+Input 2 :
+7
+52 66 64 36 45 24 32
+Output 2 :
+207
+Note :
+The program will be evaluated only after the “Submit Code” is clicked.
+Extra spaces and new line characters in the program output will result in the failure of the test case.

@@ -1,0 +1,51 @@
+Single File Programming Question
+Number of unique character
+
+
+
+Problem statement
+
+You are required to implement the following function:
+
+int countUniqueCharacters(char[] str);
+
+The function accepts a string ‘str’ as its argument. You are required to calculate the number of unique characters in string ‘str’ and return the same.
+
+Note
+
+If ‘str’ = NULL, return -1
+
+Example
+
+Input
+
+abcdabc
+
+Output
+
+4
+
+Explanation
+
+The string ‘str’ is “abcdabc” and unique characters in string ‘str’ are { ‘a’ , ‘b’ , ‘c’ , ‘d’ }, Count of them is 4, hence 4 is returned.
+
+Input format :
+Input is a string
+
+Output format :
+Integer represents number of unique characters.
+
+Code constraints :
+Length of ‘str’ <= 100000 characters
+
+‘str’ contains only lower case alphabets
+
+Sample test cases :
+Input 1 :
+efeefhjg
+Output 1 :
+5
+Input 2 :
+abcabcd
+Output 2 :
+4

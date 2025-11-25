@@ -1,0 +1,47 @@
+Single File Programming Question
+Problem Statement:
+
+
+
+State Board of secondary education had recently conducted a board exam for grade 10th students. They need to sort the “n” students based on rank. Write a program to help the board members get the student's name list on a rank basis using TreeMap.
+
+
+
+Note: Consider that there are “n” numbers of students whose marks are calculated out of 600.
+
+Input format :
+The first line of input consists of integer n represents the number of students.
+
+The next n line of inputs represents the student's mark and name separated by next lines.
+
+Output format :
+The output should display the ranks of students based on their marks in ascending order.
+
+Each rank should be formatted as Rank X: StudentName, where X is the rank number starting from 1.
+
+
+
+Refer to the sample output for formatting specifications.
+
+Code constraints :
+The number of students (n) is ≤ 10.
+
+The student's mark are ≤ 600.
+
+Sample test cases :
+Input 1 :
+4
+541
+Sangeetha
+452
+Arshad
+367
+Ganesh
+456
+Priya
+Output 1 :
+The ranks based on their marks:
+Rank 1: Sangeetha
+Rank 2: Priya
+Rank 3: Arshad
+Rank 4: Ganesh

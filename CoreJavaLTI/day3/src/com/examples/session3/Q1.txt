@@ -1,0 +1,42 @@
+Single File Programming Question
+Ravi is working on a system that processes text messages sent by users. He wants to write a program that analyzes a message, removes extra spaces, and reverses each word in the sentence. Additionally, the program should count how many words are present in the message.
+
+You need to help Ravi by writing a program that processes the message using basic string methods.
+
+
+
+Input format :
+The input is a single string (message) that contains words separated by spaces.
+
+
+
+The input can have leading, trailing, and multiple spaces between words.
+
+
+
+Output format :
+The program should print the message after removing extra spaces.
+The program should print the message with each word reversed.
+The program should print the number of words in the message.
+
+
+Code constraints :
+The length of the message string is ≤ 200 characters.
+
+Words consist of only alphabetic characters and numbers
+
+
+
+Sample test cases :
+Input 1 :
+    Hello   world this    is    Ravi  
+Output 1 :
+Message after removing extra spaces: "Hello world this is Ravi"
+Message with each word reversed: "olleH dlrow siht si ivaR"
+Word count: 5
+Input 2 :
+  Java programming is   fun  
+Output 2 :
+Message after removing extra spaces: "Java programming is fun"
+Message with each word reversed: "avaJ gnimmargorp si nuf"
+Word count: 4

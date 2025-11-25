@@ -1,0 +1,12 @@
+<div>
+    <h2>PWA2 Demo</h2>
+    <form [formGroup] = "loginForm" (ngSubmit) = "login()">
+        <div>
+            <h3>Enter Username</h3>
+            <input type = "text" formControlName="username">
+        </div>
+        <div>
+            <input type = "submit" value = "Login">
+        </div>
+    </form>
+</div>

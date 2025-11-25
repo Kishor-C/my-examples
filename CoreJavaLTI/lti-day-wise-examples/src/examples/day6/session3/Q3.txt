@@ -1,0 +1,56 @@
+Single File Programming Question
+Movie Streaming Platform: Rating-based Sorting
+
+
+
+Develop a streaming platform similar to Netflix that manages a library of movies. Implement the necessary classes and interfaces to support the following functionality:
+
+1. Create a class called Movie with the following properties:
+
+title - String
+releaseYear - int
+rating - double
+Declare the attributes as private and add appropriate getter/setter methods, along with default and parameterized constructors.
+
+2. Implement a Comparator called MovieComparator that compares movies based on their ratings in ascending order.
+
+3. In the Main class, create a collection (e.g., ArrayList) to store instances of the Movie class. Prompt the user to enter the details of several movies, including the title, release year, and rating. Create Movie objects based on the user input and add them to the collection.
+
+4. Display the movies in the sorted order, showing the title, release year, and rating for each movie.
+
+Input format :
+The first line of input is an integer representing the number of movies.
+
+The second line of input is a String representing the title of movie.
+
+The third line of input is an integer representing the release year of movie.
+
+The fourth line of input is a double value representing the rating of movie.
+
+ 
+
+Output format :
+The output displays the movies sorted by rating in ascending order.
+
+Refer to the sample output for reference.
+
+Sample test cases :
+Input 1 :
+4
+Action Movie
+2012
+6.4
+Comedy Flick
+2014
+7.2
+Drama Film
+2010
+8.1
+Sci-Fi Thriller
+2016
+7.9
+Output 1 :
+Title: Action Movie, Release Year: 2012, Rating: 6.4
+Title: Comedy Flick, Release Year: 2014, Rating: 7.2
+Title: Sci-Fi Thriller, Release Year: 2016, Rating: 7.9
+Title: Drama Film, Release Year: 2010, Rating: 8.1

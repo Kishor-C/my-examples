@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+   
+</style>
+<body>
+    <div id = "b1">
+        
+    </div>
+    <script type="text/javascript">
+        let promise1 = new Promise((resolve, reject)=>{
+            setTimeout(()=>{
+                resolve('resolved')
+            }, 500)
+        });
+        let promise2= new Promise((resolve, reject)=>{
+            setTimeout(()=>{
+                reject('rejected')
+            }, 100)
+        });
+        let p = Promise.any([promise1, promise2])
+        
+        p.then(v => console.log('then: ',v)).catch(e=>console.log('catch: ', e));
+    </script>
+</body>
+</html>

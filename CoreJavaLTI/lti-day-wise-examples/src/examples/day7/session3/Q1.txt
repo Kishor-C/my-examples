@@ -1,0 +1,44 @@
+Single File Programming Question
+Abishek is working on a system that tracks the order of items purchased by customers. He wants to create a program that records the order in which items are added and their corresponding quantities. The program should store this information in a LinkedHashMap, ensuring the order of insertion is maintained.
+
+He needs your help to complete the program.
+
+Input format :
+The input consists of multiple lines where each line represents an item and its quantity, separated by a space.
+
+Input ends when the user provides a blank line.
+
+
+
+Output format :
+For each unique item, print a line in the format: Item: [item_name], Quantity: [quantity].
+
+The output should preserve the order in which the items were added, as tracked by the LinkedHashMap.
+
+Code constraints :
+The total number of items ≤ 50.
+The length of each item name ≤ 30.
+Sample test cases :
+Input 1 :
+Apple 3
+Banana 5
+Orange 2
+Output 1 :
+Order Summary:
+Item: Apple, Quantity: 3
+Item: Banana, Quantity: 5
+Item: Orange, Quantity: 2
+Input 2 :
+Apple 3
+Banana 5
+Orange 2
+Banana 2
+Apple 1
+Output 2 :
+Order Summary:
+Item: Apple, Quantity: 4
+Item: Banana, Quantity: 7
+Item: Orange, Quantity: 2
+Note :
+The program will be evaluated only after the “Submit Code” is clicked.
+Extra spaces and new line characters in the program output will result in the failure of the test case.

@@ -1,0 +1,25 @@
+<div class="w-25">
+    <h3>Customer Registeration Form</h3>
+    <hr />
+    <form [formGroup]="customerForm" (ngSubmit)="handleSubmit()">
+        <div class="form-group">
+            <input type = "text" placeholder="Enter name" formControlName="name" class="w-75 form-control-lg">
+        </div> <br />
+        <div class="form-group">
+            <input type = "number" placeholder="Enter phone no" formControlName="phone" class="w-75 form-control-lg">
+        </div> <br />
+        <div class="form-group">
+            <h6>Select your birthday:</h6> 
+            <input type = "date" formControlName="dob" class="w-75 form-control-lg">
+        </div>
+        <br />
+        <div class="form-group">
+            <input type = "submit" class="w-75 btn btn-primary btn-lg">
+        </div>
+        
+    </form>
+    <br />
+    @if(successMessage) {
+        <div class="alert alert-success w-75">{{successMessage}}</div>
+    }
+</div>

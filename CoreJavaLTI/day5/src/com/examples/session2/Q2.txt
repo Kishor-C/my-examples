@@ -1,0 +1,51 @@
+Single File Programming Question
+Problem Statement
+
+
+
+Imagine Maria is developing a game, where it involves collecting resources on each planet, and the availability of resources is modelled using a geometric progression. 
+
+
+
+Create an abstract class Series with an abstract method nextTerm(). Implement a subclass called GeometricSeries that calculates the next term in a geometric progression for the resource collection on planets. Allow players to input the initial resource level, resource growth ratio, and the number of planets they plan to explore. 
+
+
+
+Display the predicted resource levels on each planet.
+
+Input format :
+The first line of input consists of an integer, representing the initial resource level.
+
+The second line consists of an integer, representing the growth ratio.
+
+The third line consists of an integer, representing the number of planets.
+
+Output format :
+The output displays the predicted resource levels of each planet, separated by space.
+
+
+
+Refer to the sample output for formatting specifications.
+
+Code constraints :
+In this scenario, the test cases fall under the following constraints:
+
+1 ≤ resource ≤ 10
+
+1 ≤ growth ratio ≤ 10
+
+1 ≤ number of planets ≤ 8
+
+Sample test cases :
+Input 1 :
+2
+3
+5
+Output 1 :
+2 6 18 54 162 
+Input 2 :
+5
+2
+3
+Output 2 :
+5 10 20 

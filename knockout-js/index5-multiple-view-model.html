@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id = "section1">
+        <h2>Hello <span data-bind="text:username1"></span></h2>
+    </div>
+    <div id = "section2">
+        <h2>Hello <span data-bind="text:username2"></span></h2>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.0/knockout-min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        function AppViewModelOne() {
+            this.username1 = "Kishor";
+        }
+         function AppViewModelTwo() {
+            this.username2 = "Atharv";
+        }
+        ko.applyBindings(new AppViewModelOne());
+        ko.applyBindings(new AppViewModelTwo());
+    </script>
+</body>
+</html>

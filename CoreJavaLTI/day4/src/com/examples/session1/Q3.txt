@@ -1,0 +1,43 @@
+Single File Programming Question
+Determining Neon Numbers
+
+
+
+Your task is to write a program to determine whether a given number is a neon number or not. A neon number is a number where the sum of the digits of the square of the number is equal to the number itself. 
+
+
+
+For example: 9
+
+9^2=81 =>8+1=9
+
+
+
+Create a class named 'Main' with an attribute named 'num' of type int.
+
+
+
+Constructor: Create a constructor with a parameter to initialize the attribute 'num'. Pass the value to the constructor from the main method and perform the task of checking for a neon number within the constructor.
+
+Input format :
+The first line of input consists of an integer representing the number.
+Output format :
+If the number is a neon number, the output should be in the format: <number> is a Neon Number
+If the number is not a neon number, the output should be in the format: <number> is not a Neon Number
+If the input number is greater than 20, the output should be: Invalid
+Code constraints :
+N < 20
+
+Sample test cases :
+Input 1 :
+2
+Output 1 :
+2 is not a Neon Number
+Input 2 :
+1
+Output 2 :
+1 is a Neon Number
+Input 3 :
+21
+Output 3 :
+Invalid

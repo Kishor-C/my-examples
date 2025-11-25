@@ -1,0 +1,61 @@
+Single File Programming Question
+Problem Statement
+
+
+
+Sampad wants to implement a program that takes input for a student's name and grade, validates the input, and then displays the grade for the given student.
+
+
+
+The grade should be an integer value.
+The program should validate the grade using the validateGrade() method. The method should throw an IllegalArgumentException if the grade is less than 0 or greater than 100.
+If the input is invalid due to a non-integer grade, catch the NumberFormatException and print the built-in exception message.
+If the input is invalid due to an out-of-range grade, catch the IllegalArgumentException and print the built-in exception message.
+Catch the exceptions using the multi-catch block.
+
+
+Assist Sampad to implement this program.
+
+Input format :
+The first line of input consists of a string, representing the student's name.
+
+The second line consists of an integer, representing the student's grade.
+
+Output format :
+If the input is valid and the grade is within the allowed range, print "Grade for [student name]: [grade]".
+
+If there is an exception related to invalid input, print "Invalid input: " followed by the built-in exception message.
+
+If the grade is outside the allowed range, print "Invalid grade: " followed by the built-in exception message.
+
+
+
+Refer to the sample output for formatting specifications.
+
+Code constraints :
+length of input string ≤ 10
+
+Sample test cases :
+Input 1 :
+Alice
+85
+Output 1 :
+Grade for Alice: 85
+Input 2 :
+Bob
+abc
+Output 2 :
+Invalid input: For input string: "abc"
+Input 3 :
+Eve
+120
+Output 3 :
+Invalid grade: Invalid grade: 120
+Input 4 :
+John
+-5
+Output 4 :
+Invalid grade: Invalid grade: -5
+Note :
+The program will be evaluated only after the “Submit Code” is clicked.
+Extra spaces and new line characters in the program output will result in the failure of the test case.
